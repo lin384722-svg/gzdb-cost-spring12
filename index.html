@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>达播春12期成本分析</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:#f0f4fa;color:#2d3748;font-size:14px;}
+.header{background:linear-gradient(90deg,#1a3a6b,#0f2548);color:#fff;padding:16px 24px;}
+.header h1{font-size:18px;font-weight:700;letter-spacing:.5px;}
+.header .sub{font-size:12px;color:#a0c4f1;margin-top:4px;}
+.kpi-bar{display:flex;flex-wrap:wrap;gap:12px;padding:16px 24px;background:#fff;border-bottom:1px solid #e2e8f0;}
+.kpi{background:#f7faff;border:1px solid #d6e4f7;border-radius:8px;padding:12px 16px;min-width:140px;flex:1;}
+.kpi.accent{background:linear-gradient(135deg,#1a3a6b,#2d5aa0);border:none;color:#fff;}
+.kpi .label{font-size:11px;color:#718096;margin-bottom:4px;}
+.kpi.accent .label{color:#a0c4f1;}
+.kpi .value{font-size:22px;font-weight:700;color:#1a3a6b;}
+.kpi.accent .value{color:#fff;}
+.kpi .sub{font-size:11px;color:#a0aec0;margin-top:2px;}
+.kpi.accent .sub{color:#c8dcf5;}
+.part-title{background:linear-gradient(90deg,#1a3a6b,#2d5aa0);color:#fff;padding:10px 24px;font-size:14px;font-weight:700;letter-spacing:.5px;margin-top:0;}
+.section{padding:12px 16px 0;}
+.stitle{font-size:13px;font-weight:700;color:#1a3a6b;border-left:3px solid #1a3a6b;padding-left:8px;margin-bottom:10px;}
+.card{background:#fff;border-radius:8px;padding:12px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+.ov{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed;}
+th{background:#f0f4fa;color:#4a6fa5;font-weight:600;padding:8px 10px;text-align:center;white-space:nowrap;}
+th:first-child{text-align:left;}
+td{padding:7px 10px;border-bottom:1px solid #f0f4fa;text-align:center;white-space:nowrap;}
+td:first-child{text-align:left;font-weight:500;}
+tr:last-child td{border-bottom:none;}
+.tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;}
+.tag-blue{background:#dbeafe;color:#1e40af;}
+.tag-orange{background:#fef3c7;color:#92400e;}
+.tag-red{background:#fee2e2;color:#991b1b;}
+.tag-green{background:#d1fae5;color:#065f46;}
+.red{color:#e53e3e;font-weight:600;}
+.bold{font-weight:700;background:#f0f4fa;}
+details{margin-bottom:8px;}
+details summary{cursor:pointer;padding:8px 10px;background:#f7faff;border-radius:6px;font-size:13px;font-weight:600;color:#1a3a6b;list-style:none;display:flex;align-items:center;gap:6px;}
+details summary::-webkit-details-marker{display:none;}
+details[open] summary{background:#e8f0fd;}
+.note{font-size:11px;color:#718096;padding:6px 10px;background:#fffbeb;border-left:3px solid #f6ad55;border-radius:4px;margin-bottom:10px;}
+@media(max-width:600px){
+  .kpi-bar{padding:12px;gap:8px;}
+  .kpi{min-width:calc(50% - 4px);}
+  .section{padding:10px 10px 0;}
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📊 达播春12期成本分析</h1>
+  <div class="sub">期数=12 · 截至0521 · 口径：正常班×单价 + 撞库>5%补结算</div>
+</div>
+
+<!-- KPI -->
+<div class="kpi-bar">
+  <div class="kpi accent"><div class="label">总结算费用</div><div class="value">¥21.93万</div><div class="sub">4个结算渠道</div></div>
+  <div class="kpi"><div class="label">结算正常班</div><div class="value">1,650单</div><div class="sub">总进班1694</div></div>
+  <div class="kpi"><div class="label">例产（正常班）</div><div class="value">¥133.0</div><div class="sub">21.93万÷1650</div></div>
+  <div class="kpi"><div class="label">最小年轮撞库率</div><div class="value red">7.3%</div><div class="sub">补结算¥0.52万</div></div>
+</div>
+
+<!-- 渠道汇总 -->
+<div class="part-title">📋 渠道结算汇总</div>
+<div class="section">
+<div class="note">口径：正常班全结算；撞库率>5%时，超出部分影子班按年级单价补结算；影子班≤5%不补不扣</div>
+<div class="card ov">
+<table>
+<thead><tr><th>渠道</th><th>正常班</th><th>影子班</th><th>撞库率</th><th>新高一</th><th>新高二</th><th>新高三</th><th>单价</th><th>正常班费用</th><th>撞库补结算</th><th>合计</th></tr></thead>
+<tbody>
+<tr><td><span class="tag tag-blue">最小年轮</span></td><td>1,616</td><td>127</td><td class="red">7.3%</td><td>1,433</td><td>128</td><td>55</td><td>¥130</td><td>¥210,080</td><td class="red">+¥5,180</td><td><strong>¥215,261</strong></td></tr>
+<tr><td><span class="tag tag-blue">格物致知</span></td><td>15</td><td>0</td><td>0.0%</td><td>15</td><td>0</td><td>0</td><td>¥115</td><td>¥1,725</td><td>-</td><td><strong>¥1,725</strong></td></tr>
+<tr><td><span class="tag tag-blue">合肥徽起</span></td><td>9</td><td>0</td><td>0.0%</td><td>4</td><td>1</td><td>4</td><td>¥110/120</td><td>¥1,040</td><td>-</td><td><strong>¥1,040</strong></td></tr>
+<tr><td><span class="tag tag-blue">山东深山</span></td><td>10</td><td>0</td><td>0.0%</td><td>10</td><td>0</td><td>0</td><td>¥130</td><td>¥1,300</td><td>-</td><td><strong>¥1,300</strong></td></tr>
+<tr class="bold"><td>合计</td><td>1,650</td><td>127</td><td>-</td><td>1,462</td><td>129</td><td>59</td><td>-</td><td>¥214,145</td><td>+¥5,180</td><td><strong>¥219,326</strong></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- 最小年轮达人明细 -->
+<div class="part-title">🎯 最小年轮达人明细</div>
+<div class="section">
+<div class="note">最小年轮撞库率7.3%>5%，基准线87.2单，超出39.8单×¥130=¥5,180补结算</div>
+<div class="card ov">
+<table>
+<thead><tr><th>达人</th><th>正常班</th><th>新高一</th><th>新高二</th><th>新高三</th><th>结算费用</th></tr></thead>
+<tbody>
+<tr><td>李老师讲初升高</td><td>276</td><td>275</td><td>0</td><td>1</td><td>¥35,880</td></tr>
+<tr><td>千佰惠公司聂老师</td><td>221</td><td>220</td><td>0</td><td>1</td><td>¥28,730</td></tr>
+<tr><td>李主任聊升学</td><td>147</td><td>146</td><td>0</td><td>1</td><td>¥19,110</td></tr>
+<tr><td>一线王老师讲选科</td><td>84</td><td>48</td><td>33</td><td>3</td><td>¥10,920</td></tr>
+<tr><td>初升高升学规划.</td><td>80</td><td>80</td><td>0</td><td>0</td><td>¥10,400</td></tr>
+<tr><td>田老师讲选科</td><td>72</td><td>66</td><td>6</td><td>0</td><td>¥9,360</td></tr>
+<tr><td>王老师说选科</td><td>67</td><td>62</td><td>5</td><td>0</td><td>¥8,710</td></tr>
+<tr><td>刘老师讲中考a</td><td>65</td><td>65</td><td>0</td><td>0</td><td>¥8,450</td></tr>
+<tr><td>蔡稳稳</td><td>64</td><td>64</td><td>0</td><td>0</td><td>¥8,320</td></tr>
+<tr><td>行知老师讲规划</td><td>62</td><td>55</td><td>7</td><td>0</td><td>¥8,060</td></tr>
+<tr><td>郝老师聊选科-行知</td><td>49</td><td>42</td><td>7</td><td>0</td><td>¥6,370</td></tr>
+<tr><td>升学规划.田雨</td><td>33</td><td>24</td><td>3</td><td>6</td><td>¥4,290</td></tr>
+<tr><td>王老师聊升学</td><td>31</td><td>29</td><td>1</td><td>1</td><td>¥4,030</td></tr>
+<tr><td>升学规划指导-马老师</td><td>29</td><td>23</td><td>2</td><td>4</td><td>¥3,770</td></tr>
+<tr><td>初升高规划闫老师</td><td>26</td><td>26</td><td>0</td><td>0</td><td>¥3,380</td></tr>
+<tr><td>慧智升学</td><td>26</td><td>26</td><td>0</td><td>0</td><td>¥3,380</td></tr>
+<tr><td>波波老师（初中升学）</td><td>26</td><td>26</td><td>0</td><td>0</td><td>¥3,380</td></tr>
+<tr><td>董老师讲选科</td><td>23</td><td>21</td><td>2</td><td>0</td><td>¥2,990</td></tr>
+<tr><td>谢老师讲课堂</td><td>22</td><td>14</td><td>8</td><td>0</td><td>¥2,860</td></tr>
+<tr><td>珊伊老师讲高考</td><td>19</td><td>2</td><td>11</td><td>6</td><td>¥2,470</td></tr>
+<tr><td>升学考试洋老师</td><td>18</td><td>9</td><td>7</td><td>2</td><td>¥2,340</td></tr>
+<tr><td>晶晶老师升学规划</td><td>18</td><td>2</td><td>8</td><td>8</td><td>¥2,340</td></tr>
+<tr><td>初升高升学规划</td><td>17</td><td>16</td><td>1</td><td>0</td><td>¥2,210</td></tr>
+<tr><td>小张老师</td><td>16</td><td>16</td><td>0</td><td>0</td><td>¥2,080</td></tr>
+<tr><td>赵老师讲选科</td><td>16</td><td>7</td><td>8</td><td>1</td><td>¥2,080</td></tr>
+<tr><td>高步云衢</td><td>15</td><td>13</td><td>2</td><td>0</td><td>¥1,950</td></tr>
+<tr><td>王老师升学</td><td>15</td><td>7</td><td>8</td><td>0</td><td>¥1,950</td></tr>
+<tr><td>青年教师讲选科</td><td>15</td><td>15</td><td>0</td><td>0</td><td>¥1,950</td></tr>
+<tr><td>小严老师初高阶提升课堂</td><td>14</td><td>7</td><td>6</td><td>1</td><td>¥1,820</td></tr>
+<tr><td>宁老师讲选科</td><td>14</td><td>14</td><td>0</td><td>0</td><td>¥1,820</td></tr>
+<tr><td>高阶二规划</td><td>11</td><td>0</td><td>0</td><td>11</td><td>¥1,430</td></tr>
+<tr><td>（未知）</td><td>10</td><td>9</td><td>0</td><td>1</td><td>¥1,300</td></tr>
+<tr><td>高阶三规划</td><td>7</td><td>0</td><td>0</td><td>7</td><td>¥910</td></tr>
+<tr><td>超超老师讲选科</td><td>5</td><td>2</td><td>3</td><td>0</td><td>¥650</td></tr>
+<tr><td>慧智升学平台规划</td><td>2</td><td>2</td><td>0</td><td>0</td><td>¥260</td></tr>
+<tr><td>孙老师思维课堂-一起考</td><td>1</td><td>0</td><td>0</td><td>1</td><td>¥130</td></tr>
+<tr class="bold"><td>小计（正常班费用）</td><td>1,616</td><td>1,433</td><td>128</td><td>55</td><td>¥210,080</td></tr>
+<tr style="background:#fff8f0"><td colspan="5" style="text-align:left;color:#c05621">撞库补结算（超出39.8单×¥130）</td><td class="red">+¥5,180</td></tr>
+<tr class="bold" style="background:#e8f0fd"><td colspan="5" style="text-align:left">最小年轮合计</td><td><strong>¥215,261</strong></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- 其他渠道 -->
+<div class="part-title">📋 其他渠道明细</div>
+<div class="section">
+<div class="card">
+<details><summary><span class="tag tag-blue">格物致知</span>&nbsp;正常班15单 · ¥1,725</summary>
+<div class="ov" style="margin-top:8px"><table style="width:100%">
+<thead><tr><th>达人</th><th>正常班</th><th>新高一×¥115</th><th>费用</th></tr></thead>
+<tbody>
+<tr><td>樊老师读书分享</td><td>15</td><td>15</td><td>¥1,725</td></tr>
+</tbody></table></div></details>
+
+<details><summary><span class="tag tag-blue">合肥徽起</span>&nbsp;正常班9单 · ¥1,040</summary>
+<div class="ov" style="margin-top:8px"><table style="width:100%">
+<thead><tr><th>达人</th><th>正常班</th><th>新高一×¥110</th><th>新高二×¥120</th><th>新高三×¥120</th><th>费用</th></tr></thead>
+<tbody>
+<tr><td>初升高入团规划大课堂</td><td>9</td><td>4</td><td>1</td><td>4</td><td>¥1,040</td></tr>
+</tbody></table></div></details>
+
+<details><summary><span class="tag tag-blue">山东深山</span>&nbsp;正常班10单 · ¥1,300</summary>
+<div class="ov" style="margin-top:8px"><table style="width:100%">
+<thead><tr><th>达人</th><th>正常班</th><th>新高一×¥130</th><th>费用</th></tr></thead>
+<tbody>
+<tr><td>（未知）</td><td>6</td><td>6</td><td>¥780</td></tr>
+<tr><td>徐老师讲升学(欢喜）</td><td>4</td><td>4</td><td>¥520</td></tr>
+</tbody></table></div></details>
+</div>
+</div>
+
+<!-- 暂无单价 -->
+<div class="part-title">⚠️ 暂无单价渠道（不计入）</div>
+<div class="section">
+<div class="card ov">
+<table>
+<thead><tr><th>渠道</th><th>正常班</th><th>影子班</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td><span class="tag tag-orange">领航</span></td><td>13</td><td>0</td><td>暂无春12单价</td></tr>
+<tr><td><span class="tag tag-orange">申坤</span></td><td>1</td><td>0</td><td>暂无春12单价</td></tr>
+<tr><td><span class="tag tag-orange">自然流</span></td><td>40</td><td>14</td><td>无代理商</td></tr>
+<tr><td><span class="tag tag-orange">未知渠道</span></td><td>21</td><td>0</td><td>匹配表标注未知</td></tr>
+</tbody></table>
+</div>
+</div>
+
+<div style="text-align:center;color:#a0aec0;font-size:11px;padding:12px 0 24px">生成时间：2026-05-22 · 达播春12期成本分析 · 期数=12口径</div>
+</body>
+</html>
